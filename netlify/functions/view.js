@@ -4,14 +4,13 @@ import { sql } from './lib/sql'
 export default async (request, context) => {
   if (request.method === 'GET') {
     try {
-      const views = await sql`SELECT * FROM view`/*[0].views*/
-      console.log(views)
+      const views = parseInt(await sql`SELECT * FROM view`)[0].views
 
-      /*await sql`
+      await sql`
         UPDATE view
         SET views = ${views + 1}
-        WHERE id = 1
-      `*/
+        WHERE id = ${1}
+      `
 
       return new Response(null, withCors({
         status: 200,
