@@ -25,7 +25,9 @@ if (viewed === null) {
 }
 
 async function requestView() {
-  await fetch(`https://balancify.netlify.app/.netlify/functions/view`)
+  await fetch(`https://balancify.netlify.app/.netlify/functions/view`, {
+    method: 'post'
+  })
 }
 
 export default function Root() {
