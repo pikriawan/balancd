@@ -122,7 +122,7 @@ export default function Root() {
         <section className='flex flex-col md:grid md:grid-cols-2 md:gap-10 px-5 md:px-24 py-24'>
           <div className='md:flex md:flex-col md:justify-center'>
             <h2 className='font-bold text-2xl md:text-4xl'>
-              Dibuat Oleh Siswa Akuntansi, untuk Siswa Akuntansi
+              Dibuat oleh Siswa Akuntansi, untuk Siswa Akuntansi
             </h2>
             <p className='mt-4'>
               Dengan tampilan mirip seperti pada akuntansi praktik, Anda akan
@@ -170,7 +170,7 @@ export default function Root() {
         </p>
         <form className='mt-4' onSubmit={handleSubmit}>
           <div>
-            <label htmlFor='name'>Nama</label>
+            <label className='text-sm' htmlFor='name'>Nama</label>
             <input
               id='name'
               className='w-full bg-violet-100 hover:outline-2 focus:outline-violet-600 rounded-lg p-2'
@@ -182,7 +182,7 @@ export default function Root() {
             />
           </div>
           <div className='mt-4'>
-            <label htmlFor='email'>Email</label>
+            <label className='text-sm' htmlFor='email'>Email</label>
             <input
               id='email'
               className='w-full bg-violet-100 hover:outline-2 focus:outline-violet-600 rounded-lg p-2'
